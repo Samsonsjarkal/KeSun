@@ -3,9 +3,12 @@
 <html>
 
 <head>
-  <meta charset="htf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -17,13 +20,11 @@
   <title> Ke Sun's research </title>
 </head>
 
-<body>
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+<body class="page-research">
 
-  <div class="container">
+  <div class="container site-shell">
 
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse site-nav">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -39,6 +40,7 @@
             <li><a href="index.html#">Home</a></li>
             <li class="active"><a href="research.html#">Research</a></li>
             <li><a href="publication.html#">Publication</a></li>
+            <li><a href="students.html#">Students</a></li>
             <li><a href="index.html#Honor">Honor & Award</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -46,7 +48,12 @@
   </nav>
 
   <div class="col-md-12">
-      <div class="col-md-12 page-header" id="Acoustic">
+      <div class="page-intro section-card">
+        <p class="eyebrow">Research Themes</p>
+        <h1>Systems that turn everyday devices into perceptive, deployable sensing platforms.</h1>
+        <p>This page highlights representative directions spanning acoustic interaction, biometrics, WiFi sensing, and wireless systems.</p>
+      </div>
+      <div class="col-md-12 page-header section-card publication-list" id="Acoustic">
         <h3> <i class="fa fa-volume-up"></i> HCI systems based on acoustic signals</h3>
         <div class="col-md-12">
           <div class="col-md-9">
@@ -101,7 +108,7 @@
         </div>
       </div>
 
-      <div class="col-md-12 page-header" id="Biometrics">
+      <div class="col-md-12 page-header section-card publication-list" id="Biometrics">
         <h3> <i class="fa fa-heartbeat"></i> Biometrics-based applications</h3>
         <div class="col-md-12">
           <div class="col-md-9">
@@ -122,7 +129,7 @@
         </div>
       </div>
 
-      <div class="col-md-12 page-header" id="WiFi">
+      <div class="col-md-12 page-header section-card publication-list" id="WiFi">
         <h3> <i class="fa fa-wifi"></i> HCI systems based WiFi signals</h3>
         <div class="col-md-12">
           <div class="col-md-9">
@@ -141,7 +148,7 @@
         </div>
       </div>
 
-      <div class="col-md-12 page-header" id="Charging">
+      <div class="col-md-12 page-header section-card publication-list" id="Charging">
         <h3> <i class="fa fa-battery-full"></i> Wireless charging scheduling</h3>
         <div class="col-md-12">
           <div class="col-md-9">
@@ -158,6 +165,10 @@
           </div>
         </div>
       </div>
+
+      <div class="col-md-12 site-credit">
+        Website designed by Ke Sun with OpenAI Codex.
+      </div>
   </div>
 
   <!-- Bootstrap core JavaScript
@@ -166,6 +177,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>

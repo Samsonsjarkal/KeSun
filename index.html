@@ -3,9 +3,12 @@
 <html>
 
 <head>
-  <meta charset="htf-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -17,13 +20,11 @@
   <title> Ke Sun's homepage</title>
 </head>
 
-<body>
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+<body class="page-home">
 
-  <div class="container">
+  <div class="container site-shell">
 
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse site-nav">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -39,6 +40,7 @@
             <li class="active"><a href="index.html#">Home</a></li>
             <!-- <li><a href="research.html#">Research</a></li> -->
             <li><a href="publication.html#">Publication</a></li>
+            <li><a href="students.html#">Students</a></li>
             <li><a href="index.html#Honor">Honor & Award</a></li>
             <li><a href="index.html#Service">Service</a></li>
           </ul>
@@ -46,50 +48,54 @@
       </div>
   </nav>
 
-    <div class="col-md-8">
-      <div class="col-md-8">
+    <div class="col-md-8 hero-column">
+      <div class="hero-card clearfix">
+      <div class="col-md-8 hero-copy">
+        <p class="eyebrow">Ambient intelligence for mobile, wearable, IoT and Robotics systems</p>
         <h2>Ke Sun</h2>
         <!-- <p><i class="fa fa-graduation-cap"></i>  Ph.D. candidate, <a href="https://cse.ucsd.edu/">Department of Computer Science and Engineering</a>, University of California, San Diego</p> -->
         <p><i class="fa fa-graduation-cap"></i> Assistant Professor, <a href="https://cse.engin.umich.edu/">Computer Science and Engineering</a>, <a href="https://cse.engin.umich.edu/">EECS Department</a>, University of Michigan, Ann Arbor</p>
         <!-- <p><i class="fa fa-home"></i>  La Jolla, CA, 92093 </p> -->
         <!-- <p><i class="fa fa-envelope-o"></i>  <a href="mailto:kesun@ucsd.edu">kesun@ucsd.edu</a> -->
-        <i class="fa fa-envelope-o"></i>  <a href="mailto:kesuniot@umich.edu">kesuniot@umich.edu</a> </p>
+        <p><i class="fa fa-envelope-o"></i>  <a href="mailto:kesuniot@umich.edu">kesuniot@umich.edu</a></p>
         <!-- <i class="fa fa-envelope"></i>  <a href="mailto:kesun@smail.nju.edu.cn">kesun@smail.nju.edu.cn</a> -->
-        <p> <i class="fa fa-envelope"></i>  <a href="mailto:samsonsunke@gmail.com">samsonsunke@gmail.com</a></p>
         <p><i class="fa fa-github"></i> <a href="https://github.com/Samsonsjarkal/">  Samsonsjarkal</a>
         <i class="fa fa-google"></i> <a href="https://scholar.google.com/citations?user=YZWCK4gAAAAJ&hl=en">  Google Scholar</a>
         <i class="fa fa-file"></i> <a href="files/kesun_cv.pdf">  Resume</a></p>
+        <p><i class="fa fa-flask"></i> <a href="https://ambient-intelligence-lab-umich-eecs.github.io/ami_lab_website/">Ambient Intelligence (AmI) Lab</a></p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 hero-photo">
         <img src="img/photo_KeSun_UMich.jpg"  alt="Personal photo"  height="200"/>
       </div>
-      <div class="col-md-12 page-header" id="biography">
+      </div>
+      <div class="col-md-12 page-header section-card biography-section" id="biography">
         <h3> <i class="fa fa-id-card-o"></i> Biography</h3>
         <p>
-        Ke Sun an assistant professor in CSE Divison of EECS Department at the University of Michigan, Ann Arbor, where he leads the <a href="https://ambient-intelligence-lab-umich-eecs.github.io/ami_lab_website/">Ambient Intelligence (AmI) Lab</a>.
+        Ke Sun is an Assistant Professor in the CSE Division of the EECS Department at the University of Michigan, Ann Arbor, where he leads the <a href="https://ambient-intelligence-lab-umich-eecs.github.io/ami_lab_website/">Ambient Intelligence (AmI) Lab</a>.
         </p>
         <p>
-        Committed to the vision of "ambient intelligence", his research delves into the creation of end-to-end <b>intelligent, cost-effective, deployable, and human-centric sensing systems</b> for Mobile, Wearable and IoT ecosystems.
+        Committed to the vision of "ambient intelligence," his research focuses on <b>computational sensing systems</b> that are intelligent, deployable, and human-centric across mobile, wearable, IoT, and robotic platforms. His work is driven by two core research questions:
         </p>
-        <p>
-          His work has received the <b>ACM IMWUT (UbiComp) Distinguished Paper Award</b> and the <b>ACM SenSys Best Poster Runner-up Award</b>. The real-world impact of his research is demonstrated by successful deployments on widely-used IoT platforms such as Amazon Echo and Google Home.
-          Additionally, he is honored to be a recipient of the <b>Google Ph.D. Fellowship</b>.
-        </p>
-        In the mobile and IoT realm, his work intersects various disciplines, driving innovation across different research areas, including
-        <br><br>
         <ul>
-          <li><b>Ubiquitous Computing and Human-Computer Interaction (HCI):</b></li> 
-          Multi-modal: <a href="#ultraposer">UltraPoser</a> (UIST'25), <a href="#ultrase">UltraSE</a> (MobiCom'21), <a href="#exgsense">ExGSense</a> (IPSN'21), <a href="#dolphin">Dolphin</a> (MobiSys'18)&emsp;
-          Single-modal: <a href="#uwbprac">UWB-Prac</a> (SenSys'26), <a href="#scalar">SCALAR</a> (TMC'23), <a href="#dsw">DSW</a> (INFOCOM'20), <a href="#vskin">VSKIN</a> (MobiCom'18), <a href="#llap">LLAP</a> (MobiCom'16)
+          <li><b>How can off-the-shelf sensors be repurposed to achieve extended sensing capabilities?</b></li>
+          <li><b>How can we address the system challenges of emerging AI-native sensing systems?</b></li>
+        </ul>
+        <p>
+          His work has received the <b>ACM IMWUT (UbiComp) Distinguished Paper Award</b> and the <b>ACM SenSys Best Poster Runner-up Award</b>, and he is also a recipient of the <b>Google Ph.D. Fellowship</b>. Its real-world impact is reflected in successful deployments on widely used IoT platforms such as Amazon Echo and Google Home.
+        </p>
+        <p>
+        His research is organized around two broad directions:
+        </p>
+        <ul>
+          <li><b>New Multi-modal Computational Sensing Technologies for Diverse Applications:</b></li>
+          <p><b>HCI and Ubiquitous Computing:</b> <span class="recent-highlight"><a href="#uwbprac">UWB-Prac</a> (<span class="pub-strong">SenSys'26</span>)</span>, <span class="recent-highlight"><a href="#ultraposer">UltraPoser</a> (<span class="pub-strong">UIST'25</span>)</span>, <a href="#scalar">SCALAR</a> (<span class="pub-strong">TMC'23</span>), <a href="#ultrase">UltraSE</a> (<span class="pub-strong">MobiCom'21</span>), <a href="#exgsense">ExGSense</a> (<span class="pub-strong">IPSN'21</span>), <a href="#dsw">DSW</a> (<span class="pub-strong">INFOCOM'20</span>), <a href="#vskin">VSKIN</a> (<span class="pub-strong">MobiCom'18</span>), <a href="#dolphin">Dolphin</a> (<span class="pub-strong">MobiSys'18</span>), and <a href="#llap">LLAP</a> (<span class="pub-strong">MobiCom'16</span>).</p>
+          <p><b>Health Sensing:</b> <span class="recent-highlight"><a href="#earcardio">EarCardio</a> (<span class="pub-strong">MobiCom'26</span>)</span>, <a href="#egoadl">EgoADL</a> (<span class="pub-strong">UbiComp'24</span>), <a href="#loear">LoEar</a> (<span class="pub-strong">UbiComp'22</span>), and <a href="#unlock">Unlock With Your Heart</a> (<span class="pub-strong">UbiComp'18</span>).</p>
+          <p><b>Environmental Sensing:</b> <span class="recent-highlight"><a href="#moirelens">MoiréLens</a> (<span class="pub-strong">SenSys'26</span>)</span> and <a href="#vector">VECTOR</a> (<span class="pub-strong">UbiComp'22</span>).</p>
+          <p><b>Robotic Sensing:</b> <a href="#rfcanvas">RFCanvas</a> (<span class="pub-strong">SenSys'24</span>) and <a href="#milliego">milliEgo</a> (<span class="pub-strong">SenSys'20</span>).</p>
 
-          <li><b>Mobile Health and Environmental Sensing:</b></li>
-          <a href="#egoadl">EarCardio</a> (MobiCom'26), <a href="#egoadl">EgoADL</a> (UbiComp'24), <a href="#loear">LoEar</a> (UbiComp'22), <a href="#vector">VECTOR</a> (UbiComp'22)
-
-          <li><b>Mobile and IoT Security and Privacy:</b></li>
-          <a href="#magicPatch">MagicPatch</a> (MobiCom'26), <a href="#eveguard">EveGuard</a> (S&P'25), <a href="#lcct">LCCT</a> (AAAI'25), <a href="#magmaw">Magmaw</a> (NDSS'25), <a href="#stealthyimu">StealthyIMU</a> (NDSS'23), <a href="#micshield">MicShield</a> (SenSys'20), <a href="#spidermon">SpiderMon</a> (INFOCOM'20), <a href="#unlock">Unlock With Your Heart</a> (UbiComp'18)
-
-          <li><b>Mobile System, Mobile Robotics, and Wireless Communication:</b></li>
-          <a href="#kdc">KDC</a> (NSDI'26), <a href="#rfcanvas">RFCanvas</a> (SenSys'24), <a href="#milliego">milliEgo</a> (SenSys'20)
+          <li><b>AI-Native Sensing Systems Challenges for Mobile, Wearable, Robotic, and IoT Platforms:</b></li>
+          <p><b>System Optimization:</b> improving efficiency, latency, computational overhead, storage, and communication for practical sensing systems, including <span class="recent-highlight"><a href="#kdc">KDC</a> (<span class="pub-strong">NSDI'26</span>)</span>, <a href="#rfcanvas">RFCanvas</a> (<span class="pub-strong">SenSys'24</span>), and <a href="#scalar">SCALAR</a> (<span class="pub-strong">TMC'23</span>).</p>
+          <p><b>Security and Privacy:</b> building secure and trustworthy sensing platforms through both attack analysis and defense design, including <span class="recent-highlight"><a href="#magicPatch">MagicPatch</a> (<span class="pub-strong">MobiCom'26</span>)</span>, <span class="recent-highlight"><a href="#eveguard">EveGuard</a> (<span class="pub-strong">S&amp;P'25</span>)</span>, <span class="recent-highlight"><a href="#lcct">LCCT</a> (<span class="pub-strong">AAAI'25</span>)</span>, <span class="recent-highlight"><a href="#magmaw">Magmaw</a> (<span class="pub-strong">NDSS'25</span>)</span>, <a href="#stealthyimu">StealthyIMU</a> (<span class="pub-strong">NDSS'23</span>), <a href="#micshield">MicShield</a> (<span class="pub-strong">SenSys'20</span>), and <a href="#spidermon">SpiderMon</a> (<span class="pub-strong">INFOCOM'20</span>).</p>
 
         </ul>        
         <!-- <p>I received my M.Eng. degree in Computer Science at <a href="https://www.nju.edu.cn/EN/"> Nanjing University, China </a> in 2019, and B.Eng. degree in Computer Science at <a href="http://iao.nuaa.edu.cn"> Nanjing University of Aeronautics and Astronautics, China </a> in 2016.
@@ -125,23 +131,25 @@
         </div>
       </div> -->
     </div>
-      <div class="col-md-4 page-header" id="news">
+      <div class="col-md-4 page-header section-card news-section" id="news">
         <h3><i class="fa fa-newspaper-o"></i>   News</h3>
           <ul>
+            <li> <h5>Mar 2026</h5>
+                Excited to share that <a href="https://ambient-intelligence-lab-umich-eecs.github.io/MoireLens-Page/" target="_blank">MoiréLens</a> (sensing and visualizing invisible air flow change) has been accepted by <b>SenSys 2026</b>. Congratulations to my Ph.D. student <b>Linzhen Zhu</b> and my undergraduate student <b>Runqiu Wang</b>!
             <li> <h5>Dec 2025</h5>
-                KDC (Sensor data delivery through knowledge-driven communication using Vision-Language Model (VLM)) have been accepted by <b>NSDI 2026</b>.</a>
+                <a href="#kdc">KDC</a> (Sensor data delivery through knowledge-driven communication using Vision-Language Model (VLM)) has been accepted by <b>NSDI 2026</b>.
             <li> <h5>Dec 2025</h5>
-                EarCardio (Cardiac monitoring using commerical TWS earbuds), and MagicPatch (attack on mmWave security screening systems) have been accepted by <b>MobiCom 2026</b>.</a>
+                <a href="#earcardio">EarCardio</a> (cardiac monitoring using commercial TWS earbuds) and <a href="#magicPatch">MagicPatch</a> (attack on mmWave security screening systems) have been accepted by <b>MobiCom 2026</b>.
             <li> <h5>Nov 2025</h5>
-                UWB-Prac (UWB-based in-cabin phone localization) has been accepted by <b>ACM SenSys 2026</b>.</a>
+                <a href="#uwbprac">UWB-Prac</a> (UWB-based in-cabin phone localization) has been accepted by <b>ACM SenSys 2026</b>.
             <li> <h5>Aug 2025</h5>
-              Launched our <a href="https://ambient-intelligence-lab-umich-eecs.github.io/ami_lab_website/">Ambient Intelligence (AmI) Lab</a>.</a>
+              Launched our <a href="https://ambient-intelligence-lab-umich-eecs.github.io/ami_lab_website/" target="_blank">Ambient Intelligence (AmI) Lab</a>.
             <li> <h5>Aug 2025</h5>
-                UltraPoser (Ultrasound-assisted IMU-based Full Body Tracking) has been accepted by <b>ACM UIST 2025</b>.</a>
+                <a href="#ultraposer">UltraPoser</a> (Ultrasound-assisted IMU-based Full Body Tracking) has been accepted by <b>ACM UIST 2025</b>.
             <li> <h5>Mar 2025</h5>
-                EveGuard (Adversarial Defense on Side-channel Speech Evasdropping) has been accepted by <b>IEEE S&P 2025</b>.</a>
-            <li> <h5>Jan 2025</h5>
-                "Security Attacks on LLM-based Code Completion Tools" has been accepted by <b>AAAI 2025 (Oral)</b>.</a>
+                <a href="#eveguard">EveGuard</a> (Adversarial Defense on Side-channel Speech Eavesdropping) has been accepted by <b>IEEE S&amp;P 2025</b>.
+            <!-- <li> <h5>Jan 2025</h5>
+                "Security Attacks on LLM-based Code Completion Tools" has been accepted by <b>AAAI 2025 (Oral)</b>.</a> -->
             <!-- <li> <h5>Jan 2024</h5>
                 EgoADL has been accepted by <b>IMWUT (UbiComp) 2024</b>. Stay tuned for our new wearable techniques for daily life logging, along with our new dataset and platform. </a>
             <li> <h5>Oct 2023</h5>
@@ -205,39 +213,30 @@
           </ul>
       </div>
 
-      <div class="col-md-12 page-header" id="Honor">
-        <h3> <i class="fa fa-thumbs-up"></i> Selected Honor and Awards</h3>
-        <li>2023 Google Ph.D. Fellowship in Mobile Computing</li>
-        <li>2023 UbiComp Distinguished Paper Award <b>8 out of 210 accepted papers.</b></li>
-        <li>2021 ACM MobiCom Student Travel Grants </li>
-        <li>2020 ACM SenSys Best Poster Award Runner-ups <b>3 out of 84 accepted posters.</b></li>
-        <!-- <li>2020 Jiangsu Province Computer Society Outstanding Dissertation Award  <b>Sole recipient.</b></li> -->
-        <!-- <li>2019 Nanjing University CS Distinguished Master Thesis Award </li>
-        <li>2019 Nanjing University Distinguished Graduate Student </li> -->
-        <li>2018 ACM MobiSys Student Travel Grants </li>
-        <!-- <li>2017 China National College Competition on Internet of Things, <b>Finals First Prize</b></li>
-        <p>    Project: Ultrasound based sensing applications for mobile devices</p> -->
-        <li>2015 ACM-ICPC Asia Regional Contest(Chang Chun Site), <b>Gold Medal</b></li>
-        <!-- <p>    School Rank 9 and Team Rank 13 from 217 teams</p> -->
-        <!-- <li>2016 NUAA(Nanjing University of Aeronautics and Astronautics) <b>Undergraduate Achievement Award</b> <p>22 NUAA undergraduates annually</p></li> -->
-        <li>2015 CCF(China Computer Federation) Outstanding Undergraduate Award 
-        <!-- <p>Top 100 undergraduates in China annually</p></li> -->
-        <!-- <li>2015 NUAA(Nanjing University of Aeronautics and Astronautics) <b>University President Award</b> <p>10 NUAA undergraduates annually</p></li> -->
-<!--         <li>2015 China National Aero-Technology Import & Export Scholarship</li> -->
-        <!-- <li>2014 China National Scholarship</li> -->
-        <!-- <li>2013 Fei Xiaotong Scholarship</li> -->
-      </div>
-      <div class="col-md-12 page-header" id="publication">
+      <div class="col-md-12 page-header section-card publications-section" id="publication">
         <h3> <i class="fa fa-bookmark"></i> Selected Publication (<a href="publication.html#">Full List</a>)</h3> 
         <div class="col-md-12">
           A note about authors list: Underlined are students that I supervise. '*' marks co-primary authors.
           <br><br>
         </div>
         <div class="col-md-8">
-          <p style="font-size:16px" class="paper-wireless paper-mobile" id="earcardio">
-                  <a href="" target="#earcardio">Unlocking Practical Cardiac Monitoring Capabilities on True Wireless Stereo Earbuds (To Appear)
+          <p style="font-size:16px" class="paper-wireless paper-mobile" id="moirelens">
+                  <a href="https://ambient-intelligence-lab-umich-eecs.github.io/MoireLens-Page/" target="_blank">	MoiréLens: Bringing Schlieren Imaging into Real-World Environments Using Moiré Patterns
                   </a><br/>
-                  <span class="pub-authors"><u>Yongjian Fu*</u>, <b>Ke Sun*</b>, Xinyu Zhang, <u>Ruyao Wang</u>, Xinyi Li, Hao Pan, Yaoxue Zhang, Ju Ren</span><br/>
+                  <span class="pub-authors"><u>Linzhen Zhu*</u>, <u>Runqiu Wang*</u>, <u>Yi Rong</u>, <b>Ke Sun</b></span><br/>
+                  <span class="pub-strong">ACM SenSys 2026</span>, May 2026. (Acceptance ratio: 18.9%)
+                  <a href="https://ambient-intelligence-lab-umich-eecs.github.io/MoireLens-Page/" target="_blank"><i class="fa fa-external-link fa-fw"></i></a>
+                  </p>
+                  MoiréLens demonstrates that everyday cameras can be used for visualizing air-flow and refractive-index dynamics. It converts subtle refractive-index variations into measurable Moiré phase shifts formed between the background and the camera’s color-filter array.
+        </div>
+        <div class="col-md-4">
+          <img src="img/moirelens.gif"  alt="moirelens"  width="250"/>
+        </div>
+        <div class="col-md-8">
+          <p style="font-size:16px" class="paper-wireless paper-mobile" id="earcardio">
+                  <a href="#earcardio">Unlocking Practical Cardiac Monitoring Capabilities on True Wireless Stereo Earbuds (To Appear)
+                  </a><br/>
+                  <span class="pub-authors"><u>Yongjian Fu*</u>, <b>Ke Sun</b>, Xinyu Zhang, <u>Ruyao Wang</u>, Xinyi Li, Hao Pan, Yaoxue Zhang, Ju Ren</span><br/>
                   <span class="pub-strong">ACM MobiCom 2026</span>, May 2026. (Acceptance ratio: 11.0%)
                   </p>
                   EarCardio repurposes the IMU sensors in TWS earbuds for cardiac monitoring by capturing in-ear ballistocardiogram (BCG) signals. Our experiments on 110 subjects verify that EarCardio can accurately reconstruct cardiac signals while showing resilience to motion artifacts, missing data, and low sampling rates.
@@ -250,7 +249,7 @@
         </div>
         <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="magicPatch">
-                  <a href="" target="#magicPatch">Attacking mmWave Imaging Using Metasurfaces Based on Intensity and Time-of-Flight Manipulation (To Appear)
+                  <a href="#magicPatch">Attacking mmWave Imaging Using Metasurfaces Based on Intensity and Time-of-Flight Manipulation (To Appear)
                   </a><br/>
                   <span class="pub-authors">Shuning Wang, Yongjian Fu, Hao Pan, Xinyi Li, Linghui Zhong, Yaxiong Xie, <b>Ke Sun</b>, Guangtao Xue, Yaoxue Zhang, Ju Ren</span><br/>
                   <span class="pub-strong">ACM MobiCom 2026</span>, May 2026. (Acceptance ratio: 11.0%)
@@ -264,13 +263,28 @@
           <br><br>
         </div>
         <div class="col-md-8">
+          <p style="font-size:16px" class="paper-wireless paper-mobile" id="soilnutri">
+                  <a href="https://doi.org/10.1145/3789674" target="_blank">SoilNutri: A Passive Metasurface-based, Low-cost System for Soil Moisture and Nitrogen Monitoring
+                  </a><br/>
+                  <span class="pub-authors">Juexing Wang, Binbin Xie, Yimeng Liu, Minhao Cui, Xiao Zhang, Guangjing Wang, <b>Ke Sun</b>, Zhichao Cao, Huacheng Zeng, Qingxu Jin, et al.</span><br/>
+                  <span class="pub-strong">ACM IMWUT (UbiComp) 2026</span>, Mar 2026.
+                  </p>
+                  SoilNutri is a passive metasurface-based and low-cost system for soil moisture and nitrogen monitoring.
+        </div>
+        <div class="col-md-4">
+          <img src="img/SoilNutri.png" alt="SoilNutri" width="250"/>
+        </div>
+        <div class="col-md-12">
+          <br><br>
+        </div>
+        <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="kdc">
-                  <a href="" target="#kdc">Efficient and Resilient Sensor Data Delivery through Knowledge-Driven Communication (To Appear)
+                  <a href="#kdc">From Bits to Tokens: Knowledge-Driven Generative Communication of Multimodal Data (To Appear)
                   </a><br/>
                   <span class="pub-authors">Xingyu Chen, Zihao Feng, Wuqiong Zhao, Jianrong Ding, <b>Ke Sun</b>, Xinyu Zhang</span><br/>
                   <span class="pub-strong">USENIX NSDI 2026</span>, May 2026. (Acceptance ratio: 22.1%)
                   </p>
-                  We introduce Knowledge-Driven Communication (KDC), a framework that transmits semantic knowledge rather than raw bits by leveraging pretrained knowledge bases. KDC consistently outperforms state-of-the-art codecs and learned baselines, achieving high task accuracy with a fraction of the transmitted data, while maintaining robustness under challenging wireless conditions.
+                  We introduce Knowledge-Driven Communication (KDC), a framework that transmits semantic knowledge rather than raw bits by leveraging pretrained knowledge bases.
         </div>
           <div class="col-md-4">
             <img src="img/kdc.png"  alt="kdc"  width="250"/>
@@ -280,7 +294,7 @@
           </div>
         <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="uwbprac">
-                  <a href="" target="#uwbprac">UWB-based Localization of Smartphones Inside a Vehicle to Prevent Distracted Driving (To Appear)
+                  <a href="#uwbprac">UWB-based Localization of Smartphones Inside a Vehicle to Prevent Distracted Driving (To Appear)
                   </a><br/>
                   <span class="pub-authors"><u>Kailai Cui</u>, <b>Ke Sun</b>, Kang G. Shin</span><br/>
                   <span class="pub-strong">ACM SenSys 2026</span>, May 2026. (Acceptance ratio: 19.0%)
@@ -295,13 +309,12 @@
           </div>
         <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="ultraposer">
-                  <a href="files/uist25_ultraposer.pdf" target="#ultraposer">UltraPoser: Pushing the Limits of IMU-based Full-Body Pose Estimation with Ultrasound Sensing on Consumer Wearables
+                  <a href="files/uist25_ultraposer.pdf" target="_blank">UltraPoser: Pushing the Limits of IMU-based Full-Body Pose Estimation with Ultrasound Sensing on Consumer Wearables
                   </a><br/>
                   <span class="pub-authors"><u>Yadong Li*</u>, <u>Shuning Wang*</u>, Yongjian Fu, Justin Chen, Xingyu Chen, Ju Ren, Xinyu Zhang, Akshay Gadre, <b>Ke Sun</b></span><br/>
                   <span class="pub-strong">ACM UIST 2025</span>, Oct 2025. (Acceptance ratio: 22.2%)
                   <a href="https://www.youtube.com/watch?v=P93l3j6mSCw&feature=youtu.be"><i class="fa fa-film fa-fw"></i></a>
                   <a href="https://github.com/leeyadong/UltraPoser/"><i class="fa fa-github fa-fw w3-text-indigo"></i></a></p>
-                  </p>
                   UltraPoser leverages built-in microphones and speakers on commodity wearables, such as smartphones and smartwatches, to transmit and receive inaudible ultrasound signals, to support IMU-based full-body pose estimation with high accuracy.
           </div>
           <div class="col-md-4">
@@ -312,7 +325,7 @@
           </div>
         <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="eveguard">
-                  <a href="files/sp25_EveGuard.pdf" target="#eveguard">EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations
+                  <a href="files/sp25_EveGuard.pdf" target="_blank">EveGuard: Defeating Vibration-based Side-Channel Eavesdropping with Audio Adversarial Perturbations
                   </a><br/>
                   <span class="pub-authors"><u>Jung-woo Chang*</u>, <b>Ke Sun*</b>, <u>David Xia</u>, Xinyu Zhang, Farinaz Koushanfar</span><br/>
                    <span class="pub-strong">IEEE S&P (Oakland) 2025</span>, May 2025. (Acceptance ratio: 14.9%)
@@ -327,7 +340,7 @@
           </div>
         <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="lcct">
-                  <a href="files/aaai25_llm.pdf" target="#lcct">Security Attacks on LLM-based Code Completion Tools
+                  <a href="files/aaai25_llm.pdf" target="_blank">Security Attacks on LLM-based Code Completion Tools
                   </a><br/>
                   <span class="pub-authors"><u>Cheng Wen</u>, <b>Ke Sun</b>, Xinyu Zhang, Wei Wang</span><br/>
                    <span class="pub-strong">AAAI 2025 (Oral)</span>, Feb 2025. (Top 5%)
@@ -342,7 +355,7 @@
           </div>
         <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="magmaw">
-                  <a href="files/ndss25_magmaw.pdf" target="#magmaw">Magmaw: Modality-Agnostic Adversarial Attacks on Machine Learning-Based Wireless Communication Systems
+                  <a href="files/ndss25_magmaw.pdf" target="_blank">Magmaw: Modality-Agnostic Adversarial Attacks on Machine Learning-Based Wireless Communication Systems
                   </a><br/>
                   <span class="pub-authors"><u>Jung-Woo Chang</u>, <b>Ke Sun</b>, Nasimeh Heydaribeni, Seira Hidano, Xinyu Zhang, Farinaz Koushanfa</span><br/>
                    <span class="pub-strong">NDSS 2025</span>, Feb 2025. (Acceptance ratio: 16.1%)
@@ -357,7 +370,7 @@
           </div>
           <div class="col-md-8">
             <p style="font-size:16px" class="paper-wireless paper-mobile" id="rfcanvas">
-                    <a href="files/sensys24_rfcanvas.pdf" target="#rfcanvas">RFCanvas: Modeling RF Channel by Fusing Visual Priors and Few-shot RF Measurements
+                    <a href="files/sensys24_rfcanvas.pdf" target="_blank">RFCanvas: Modeling RF Channel by Fusing Visual Priors and Few-shot RF Measurements
                     </a><br/>
                     <span class="pub-authors">Xingyu Chen, Zihao Feng, <b>Ke Sun</b>, Kun Qian, Xinyu Zhang</span><br/>
                      <span class="pub-strong">SenSys 2024</span>, Nov 2024.
@@ -372,7 +385,7 @@
             </div>
         <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="egoadl">
-                  <a href="files/ubicomp24_egoadl.pdf" target="#egoadl">Multimodal Daily-life Logging in Free-living Environments Using Non-Visual Egocentric Sensors on a Smartphone
+                  <a href="files/ubicomp24_egoadl.pdf" target="_blank">Multimodal Daily-life Logging in Free-living Environments Using Non-Visual Egocentric Sensors on a Smartphone
                   </a><br/>
                   <span class="pub-authors"><b>Ke Sun</b>, <u>Chunyu Xia</u>, Xinyu Zhang, Hao Chen, Charlie Zhang</span><br/>
                    <span class="pub-strong">ACM IMWUT (UbiComp) 2024</span>, March 2024.
@@ -387,7 +400,7 @@
           </div>
         <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="stealthyimu">
-                  <a href="files/ndss23_StealthyIMU.pdf" target="stealthyimu">StealthyIMU: Extracting Permission-protected Private Information from Smartphone Voice Assistant using Zero-Permission Sensors</a><br/>
+                  <a href="files/ndss23_StealthyIMU.pdf" target="_blank">StealthyIMU: Extracting Permission-protected Private Information from Smartphone Voice Assistant using Zero-Permission Sensors</a><br/>
                   <span class="pub-authors"><b>Ke Sun</b>, <u>Chunyu Xia</u>, Songlin Xu, Xinyu Zhang</span><br/>
                    <span class="pub-strong">NDSS 2023</span>, Feb 2023. (Acceptance ratio: 58/398=14.6%)
                    <a href="files/ndss23_StealthyIMU.pptx" target="_blank"><i class="fa fa fa-file-powerpoint-o fa-fw"></i></a>
@@ -403,7 +416,7 @@
           </div>
           <div class="col-md-8">
             <p style="font-size:16px" class="paper-wireless paper-mobile" id="scalar">
-                    <a href="" target="scalar">SCALAR: Self-Calibrated Acoustic Ranging for Distributed Mobile Devices</a><br/>
+                    <a href="files/tmc23_scalar.pdf" target="_blank">SCALAR: Self-Calibrated Acoustic Ranging for Distributed Mobile Devices</a><br/>
                     <span class="pub-authors">Lei Wang, Haoran Wan, Ting Zhao, <b>Ke Sun</b>, Shuyu Shi, Haipeng Dai, Guihai Chen, Haodong Liu, Wei Wang</span><br/>
                      <span class="pub-strong">IEEE TMC 2023</span>
                     </p>
@@ -417,7 +430,7 @@
             </div>
         <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="vector">
-                  <a href="files/ubicomp22vector.pdf" target="vector">VECTOR: Velocity Based Temperature-field Monitoring with Distributed Acoustic Devices</a><br/>
+                  <a href="files/ubicomp22vector.pdf" target="_blank">VECTOR: Velocity Based Temperature-field Monitoring with Distributed Acoustic Devices</a><br/>
                   <span class="pub-authors">Haoran Wan, Lei Wang, Ting Zhao, <b>Ke Sun</b>, Shuyu Shi, Haipeng Dai, Guihai Chen, Haodong Liu, Wei Wang</span><br/>
                    <span class="pub-strong">ACM IMWUT (UbiComp) 2022</span>, Sep 2022. 
                   </p>
@@ -432,7 +445,7 @@
 
         <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="loear">
-                  <a href="files/ubicomp22loear.pdf" target="loear">LoEar: Push the Range Limit of Acoustic Sensing for Vital Sign Monitoring</a><br/>
+                  <a href="files/ubicomp22loear.pdf" target="_blank">LoEar: Push the Range Limit of Acoustic Sensing for Vital Sign Monitoring</a><br/>
                   <span class="pub-authors">Lei Wang, Wei Li, <b>Ke Sun</b>, Fusang Zhang, Tao Gu, Chenren Xu, Daqing Zhang</span><br/>
                    <span class="pub-strong">ACM IMWUT (UbiComp) 2022</span>, Sep 2022. 
                   </p>
@@ -447,7 +460,7 @@
 
         <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="ultrase">
-                  <a href="files/mobicom21_UltraSE.pdf" target="ultrase">UltraSE: Single-Channel Speech Enhancement Using Ultrasound</a><br/>
+                  <a href="files/mobicom21_UltraSE.pdf" target="_blank">UltraSE: Single-Channel Speech Enhancement Using Ultrasound</a><br/>
                   <span class="pub-authors"><b>Ke Sun</b>, Xinyu Zhang</span><br/>
                    <span class="pub-strong">ACM MobiCom 2021</span>, Oct 2021. (Acceptance ratio: 60/299=20.1%)
                    <a href="files/mobicom21_ultrase.pptx" target="_blank"><i class="fa fa fa-file-powerpoint-o fa-fw"></i></a>
@@ -463,7 +476,7 @@
 
         <div class="col-md-8">
         <p style="font-size:16px" class="paper-wireless paper-mobile" id="exgsense">
-                <a href="files/IPSN21_ExGSense.pdf" target="exgsense">ExGSense: Toward Facial Gesture Sensing and Reconstruction with a Sparse Near-Eye Sensor Array </a><br/>
+                <a href="files/IPSN21_ExGSense.pdf" target="_blank">ExGSense: Toward Facial Gesture Sensing and Reconstruction with a Sparse Near-Eye Sensor Array </a><br/>
                 <span class="pub-authors">Chen Chen, <b>Ke Sun</b>, Xinyu Zhang</span><br/>
                  <span class="pub-strong">ACM/IEEE IPSN 2021</span>, May 2021. (Acceptance ratio: 26/105=24.8%)</p> 
                  ExGSense propose to sense whole facial gestures by using a sparse set of biopotential transducers. We propose a dual-branch multiview representation learning
@@ -478,7 +491,7 @@
 
         <div class="col-md-8">
         <p style="font-size:16px" class="paper-wireless paper-mobile" id="micshield">
-                <a href="files/sensys20_micShield.pdf" target="micshield">"Alexa, Stop Spying on Me": Speech Privacy Protection Against Voice Assistants</a><br/>
+                <a href="files/sensys20_micShield.pdf" target="_blank">"Alexa, Stop Spying on Me": Speech Privacy Protection Against Voice Assistants</a><br/>
                 <span class="pub-authors"><b>Ke Sun</b>, Chen Chen, Xinyu Zhang</span><br/>
                  <span class="pub-strong">ACM SenSys 2020</span>, Nov 2020. (Acceptance ratio: 43/213=20.2%)
                  <a href="files/MicShield_SenSys20_slide.pptx" target="_blank"><i class="fa fa fa-file-powerpoint-o fa-fw"></i></a>
@@ -493,7 +506,7 @@
         </div>
         <div class="col-md-8">
         <p style="font-size:16px" class="paper-wireless paper-mobile" id="milliego">
-                <a href="files/sensys20_milliego.pdf" target="milliego">milliEgo: Single-chip mmWave Radar Aided Egomotion Estimation via Deep Sensor Fusion</a><br/>
+                <a href="files/sensys20_milliego.pdf" target="_blank">milliEgo: Single-chip mmWave Radar Aided Egomotion Estimation via Deep Sensor Fusion</a><br/>
                 <span class="pub-authors">Chris Xiaoxuan Lu, Muhamad Risqi U. Saputra, Peijun Zhao, Yasin Almalioglu, Pedro P. B. de Gusmao, Changhao Chen, <b>Ke Sun</b>, Niki Trigoni, Andrew Markham</span><br/>
                  <span class="pub-strong">ACM SenSys 2020</span>, Nov 2020. (Acceptance ratio: 43/213=20.2%)
                  <a href="https://www.youtube.com/watch?v=5LG-PbrUSO8&feature=youtu.be"><i class="fa fa-film fa-fw"></i></a>
@@ -623,6 +636,29 @@
         </div>
       </div>
 
+      <div class="col-md-12 page-header section-card compact-section" id="Honor">
+        <h3> <i class="fa fa-thumbs-up"></i> Selected Honor and Awards</h3>
+        <li>2023 Google Ph.D. Fellowship in Mobile Computing</li>
+        <li>2023 UbiComp Distinguished Paper Award <b>8 out of 210 accepted papers.</b></li>
+        <li>2021 ACM MobiCom Student Travel Grants </li>
+        <li>2020 ACM SenSys Best Poster Award Runner-ups <b>3 out of 84 accepted posters.</b></li>
+        <!-- <li>2020 Jiangsu Province Computer Society Outstanding Dissertation Award  <b>Sole recipient.</b></li> -->
+        <!-- <li>2019 Nanjing University CS Distinguished Master Thesis Award </li>
+        <li>2019 Nanjing University Distinguished Graduate Student </li> -->
+        <li>2018 ACM MobiSys Student Travel Grants </li>
+        <!-- <li>2017 China National College Competition on Internet of Things, <b>Finals First Prize</b></li>
+        <p>    Project: Ultrasound based sensing applications for mobile devices</p> -->
+        <li>2015 ACM-ICPC Asia Regional Contest(Chang Chun Site), <b>Gold Medal</b></li>
+        <!-- <p>    School Rank 9 and Team Rank 13 from 217 teams</p> -->
+        <!-- <li>2016 NUAA(Nanjing University of Aeronautics and Astronautics) <b>Undergraduate Achievement Award</b> <p>22 NUAA undergraduates annually</p></li> -->
+        <li>2015 CCF(China Computer Federation) Outstanding Undergraduate Award 
+        <!-- <p>Top 100 undergraduates in China annually</p></li> -->
+        <!-- <li>2015 NUAA(Nanjing University of Aeronautics and Astronautics) <b>University President Award</b> <p>10 NUAA undergraduates annually</p></li> -->
+<!--         <li>2015 China National Aero-Technology Import & Export Scholarship</li> -->
+        <!-- <li>2014 China National Scholarship</li> -->
+        <!-- <li>2013 Fei Xiaotong Scholarship</li> -->
+      </div>
+
       <!-- <div class="col-md-12 page-header" id="Award">
         <h3> <i class="fa fa-thumbs-up"></i> Award</h3>
         <li>2017 China National College Competition on Internet of Things, October 2017, <b>Finals First Prize</b></li>
@@ -636,7 +672,7 @@
         <li>The Fourth China National Professional Software Engineering "Lan Qiao Cup" Design Contest(C/C++ Goup) <p>July 2013, <b>Finals Second Prize</b>.</p></li> -->
       <!-- </div> -->
       
-      <div class="col-md-12 page-header" id="Service">
+      <div class="col-md-12 page-header section-card compact-section" id="Service">
         <h3> <i class="fa fa-thumbs-up"></i> Service</h3>
         Program Committee Member:
         <li> 2025 ACM MobiSys, ACM SenSys PC</li>
@@ -652,6 +688,10 @@
         <li> 2023 ICLR Machine Learning for IoT Workshop Co-organizer and Session Chair</li>
       </div>
 
+      <div class="col-md-12 site-credit">
+        Website designed by Ke Sun with OpenAI Codex.
+      </div>
+
   </div>
 
 
@@ -661,6 +701,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
