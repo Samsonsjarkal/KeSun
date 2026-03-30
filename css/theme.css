@@ -228,6 +228,10 @@ h4 {
   color: var(--accent);
 }
 
+.hero-link-row {
+  margin-bottom: 10px;
+}
+
 .hero-photo {
   text-align: right;
 }
