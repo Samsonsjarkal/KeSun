@@ -513,7 +513,8 @@ h4 {
   border-radius: 18px;
   background: rgba(255, 203, 5, 0.12);
   color: var(--ink-soft);
-  font-weight: 700;
+  font-size: 0.9rem;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -602,6 +603,156 @@ h4 {
   box-shadow: 0 22px 42px rgba(0, 39, 76, 0.18);
 }
 
+.research-lead {
+  max-width: 900px;
+  margin-bottom: 22px;
+  color: var(--ink-soft);
+}
+
+.research-nav-card {
+  margin-bottom: 24px;
+}
+
+.research-topic-nav {
+  display: grid;
+  gap: 14px;
+}
+
+.research-topic-nav-group {
+  display: grid;
+  gap: 8px;
+}
+
+.research-topic-nav-link {
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink);
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.research-topic-nav-link:hover,
+.research-topic-nav-link:focus {
+  background: rgba(255, 203, 5, 0.14);
+  color: var(--accent);
+}
+
+.research-topic-nav-sublinks {
+  display: grid;
+  gap: 6px;
+  padding-left: 16px;
+  margin: 0;
+}
+
+.research-topic-nav-sublinks a {
+  color: var(--ink-soft);
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.research-topic-nav-sublinks li {
+  margin-bottom: 0;
+  font-size: 0.9em;
+}
+
+.research-topic-nav-sublinks .pub-strong {
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.research-topic-nav-sublinks a:hover,
+.research-topic-nav-sublinks a:focus {
+  color: var(--accent);
+}
+
+.research-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.research-topic-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(220px, 0.9fr) minmax(180px, 0.75fr);
+  gap: 24px;
+  align-items: start;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.research-topic-kicker {
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.research-topic-card h4 {
+  margin-bottom: 12px;
+}
+
+.research-topic-card ul {
+  margin: 12px 0 0;
+}
+
+.research-topic-card li:last-child {
+  margin-bottom: 0;
+}
+
+.research-topic-links {
+  padding-left: 4px;
+}
+
+.research-topic-links h5 {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.research-topic-links ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.research-topic-links li {
+  margin-bottom: 8px;
+  font-size: 0.85em;
+}
+
+.research-topic-links .pub-strong {
+  font-size: inherit;
+  font-weight: 600;
+}
+
+.research-paper-note {
+  color: var(--ink-soft);
+  font-size: 0.7em;
+}
+
+.research-topic-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.research-topic-media img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 16px 36px rgba(0, 39, 76, 0.14);
+}
+
 .pub-strong {
   color: var(--accent);
   font-weight: 800;
@@ -674,6 +825,14 @@ h4 {
   .container.site-shell {
     width: calc(100vw - 24px);
     padding-top: 18px;
+  }
+
+  .research-topic-card {
+    grid-template-columns: 1fr;
+  }
+
+  .research-topic-links {
+    padding-left: 0;
   }
 
   .site-nav {

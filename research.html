@@ -9,22 +9,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/theme.css?v=20260328" rel="stylesheet">
   <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
   <script src="assets/js/ie-emulation-modes-warning.js"></script>
 
-  <title> Ke Sun's research </title>
+  <title>Ke Sun's research</title>
 </head>
 
 <body class="page-research">
 
   <div class="container site-shell">
 
-  <nav class="navbar navbar-inverse site-nav">
+    <nav class="navbar navbar-inverse site-nav">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -42,143 +40,228 @@
             <li><a href="publication.html#">Publication</a></li>
             <li><a href="students.html#">Students</a></li>
             <li><a href="index.html#Honor">Honor & Award</a></li>
+            <li><a href="index.html#Service">Service</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
-  </nav>
+    </nav>
 
-  <div class="col-md-12">
-      <div class="page-intro section-card">
-        <p class="eyebrow">Research Themes</p>
-        <h1>Systems that turn everyday devices into perceptive, deployable sensing platforms.</h1>
-        <p>This page highlights representative directions spanning acoustic interaction, biometrics, WiFi sensing, and wireless systems.</p>
-      </div>
-      <div class="col-md-12 page-header section-card publication-list" id="Acoustic">
-        <h3> <i class="fa fa-volume-up"></i> HCI systems based on acoustic signals</h3>
-        <div class="col-md-12">
-          <div class="col-md-9">
-            <h4> VSkin: Sensing Touch Gestures on Surfaces of Mobile Devices Using Acoustic Signals</h4>
-            <li> Enabling touch gesture sensing on all surfaces of the mobile device using acoustic signals. </li>
-            <li> Separating the structure-borne and the air-borne sound signals from the captured signals. </li>
-            <li> Performing the phase and magnitude measurement of multiple sound paths at a high sampling rate of 3 kHz. </li>
-            <li> Sensing touch gestures, such as swiping, tapping, and scrolling, on different kinds of commerical mobile phones. </li>
-            <li> <font color="#e74c3c"> <b> Publicated in in MobiCom 2018. </b></font>
-              <a href="files/mobicom18_vskin.pdf" target="_blank"><i class="fa fa fa-file-pdf-o fa-fw"></i></a>
-              <a href="files/mobicom18_vskin_slides.pptx" target="_blank"><i class="fa fa fa-file-powerpoint-o fa-fw"></i></a>
-              <a href="https://www.youtube.com/watch?v=POujv7hm3Z4"><i class="fa fa-film fa-fw"></i></a>
-            </li>
+    <div class="col-md-12">
+      <div class="col-md-12 page-header section-card research-nav-card">
+        <h3><i class="fa fa-compass"></i> Ongoing Research Projects</h3>
+        <p class="research-lead">The lab studies how mobile, wearable, robotic, and IoT platforms can be turned into practical computational sensing systems that are more perceptive, more adaptive, and more useful in everyday environments.</p>
+        <div class="research-topic-nav">
+          <div class="research-topic-nav-group">
+            <a class="research-topic-nav-link" href="#multimodal-projects">New Multi-modal Computational Sensing Technologies for Diverse Applications</a>
+            <ul class="research-topic-nav-sublinks">
+              <li><a href="#multimodal-projects">Computational Sensing of Invisible Environmental Dynamics</a>: <a href="index.html#moirelens">MoiréLens</a> [<span class="pub-strong">SenSys'26</span>], <a href="index.html#soilnutri">SoilNutri</a> [<span class="pub-strong">UbiComp'26</span>], <a href="index.html#vector">VECTOR</a> [<span class="pub-strong">UbiComp'22</span>]</li>
+              <li><a href="#multimodal-projects">Health Sensing using Wearable Consumer Electronics</a>: <a href="index.html#earcardio">EarCardio</a> [<span class="pub-strong">MobiCom'26</span>], <a href="index.html#egoadl">EgoADL</a> [<span class="pub-strong">UbiComp'24</span>], <a href="index.html#loear">LoEar</a> [<span class="pub-strong">UbiComp'22</span>]</li>
+              <li><a href="#multimodal-projects">Fine-grained Human Activity Sensing and Reasoning</a>: <a href="index.html#ultraposer">UltraPoser</a> [<span class="pub-strong">UIST'25</span>], <a href="index.html#egoadl">EgoADL</a> [<span class="pub-strong">UbiComp'24</span>]</li>
+              <li><a href="#multimodal-projects">Tactile Sensing and Actuation for Robotics</a>: In submission</li>
+            </ul>
           </div>
-          <div class="col-md-3">
-            <img src="img/vskin.gif"  width="230"/>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="col-md-9">
-            <h4> Depth Aware Finger Tapping on Virtual Displays</h4>
-            <li> Fusing ultrasound sensing information and vision information to achieve tapping-in-the-air for AR/VR systems. </li>
-            <li> Achieving mm-level accuracy, less than 20 ms latency and high robustness with low computational cost. </li>
-            <li> Measuring the finger bending angle to provide different levels feedback by sensor fusion. </li>
-            <li> Bring tapping-in-the-air to any low-end mobile devices. </li>
-            <li> <font color="#e74c3c"> <b> Publicated in MobiSys 2018. </b></font>
-                <a href="files/mobisys18_ARTyping.pdf" target="_blank"><i class="fa fa fa-file-pdf-o fa-fw"></i></a>
-                <a href="files/mobisys18_ARTyping_slides.pdf" target="_blank"><i class="fa fa fa-file-powerpoint-o fa-fw"></i></a>
-            </li>
-          </div>
-          <div class="col-md-3">
-            <img src="img/ARtype.jpg"  width="230"/>
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="col-md-9">
-            <h4> Device-free Gesture Tracking using Acoustic Signals</h4>
-            <li> Enabling device-free gesture tracking using acoustic signals on existing mobile devices as software. </li>
-            <li> Using the acoustic phase to get fine-grained movement direction and movement distance measurements. </li>
-            <li> Enabling 2-D gesture tracking based on delay profile path measurement. </li>
-            <li> Achieves mm-level accuracy, less than 15 ms latency, and lower than 3% CPU usage on commercial mobile phones. </li>
-            <li> <font color="#e74c3c"> <b> Publicated in MobiCom 2016. </b></font>
-                <a href="files/mobicom16_ultrasound.pdf" target="_blank"><i class="fa fa fa-file-pdf-o fa-fw"></i></a>
-                <a href="files/mobicom16_ultrasound_slides.pdf" target="_blank"><i class="fa fa fa-file-powerpoint-o fa-fw"></i></a>
-                <a href="https://www.youtube.com/watch?v=gs8wMrOSY80"><i class="fa fa-film fa-fw"></i></a>
-                <a href="https://github.com/Samsonsjarkal/LLAP/blob/master/README.md"><i class="fa fa-github fa-fw w3-text-indigo"></i></a>
-            </li>
-          </div>
-          <div class="col-md-3">
-            <img src="img/llapfly.gif"   width="230"/>
+          <div class="research-topic-nav-group">
+            <a class="research-topic-nav-link" href="#ai-native-projects">AI-Native Sensing Systems Challenges for Mobile, Wearable, Robotic, and IoT Platforms</a>
+            <ul class="research-topic-nav-sublinks">
+              <li><a href="#ai-native-projects">AI-Assisted Mobile System Optimization</a>: <a href="index.html#kdc">KDC</a> [<span class="pub-strong">NSDI'26</span>], <a href="index.html#rfcanvas">RFCanvas</a> [<span class="pub-strong">SenSys'24</span>]</li>
+              <li><a href="#ai-native-projects">AI-Native Secure and Privacy-Preserving Sensing</a>: <a href="index.html#magicPatch">MagicPatch</a> [<span class="pub-strong">MobiCom'26</span>], <a href="index.html#eveguard">EveGuard</a> [<span class="pub-strong">S&amp;P'25</span>], <a href="index.html#magmaw">Magmaw</a> [<span class="pub-strong">NDSS'25</span>]</li>
+              <li><a href="#ai-native-projects">Sensing-Assisted Native AI Mobile System</a>: In submission</li>
+              <li><a href="#ai-native-projects">AI-Assisted Mobile Sensing System</a>: Ongoing</li>
+              <li><a href="#ai-native-projects">Wearable Agentic AI Memory System</a>: Ongoing</li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div class="col-md-12 page-header section-card publication-list" id="Biometrics">
-        <h3> <i class="fa fa-heartbeat"></i> Biometrics-based applications</h3>
-        <div class="col-md-12">
-          <div class="col-md-9">
-            <h4> Unlock With Your Heart: Heartbeat-based Authentication on Commercial Mobile Phones</h4>
-            <li> Enabling heartbeat-based authentication on commercial mobile devices using the built-in accelerometer. </li>
-            <li> Proposing a set of novel signal processing schemes designed for heartbeat-based user authentication, including template-based heartbeat alignment, wavelet-based feature extraction, and dynamic heartbeat pattern selection. </li>
-            <li> Implementing real-time heartbeat-based authentication system on commercial smartphones. </li>
-            <li> Achieving high authentication accuracy for different kinds of cases. </li>
-            <li> <font color="#e74c3c"> <b> Publicated in UbiComp 2018. </b></font>
-              <a href="files/ubicomp18Heartbeat.pdf" target="_blank"><i class="fa fa fa-file-pdf-o fa-fw"></i></a>
-              <a href="files/ubicomp18_heartbeat_slides.pptx" target="_blank"><i class="fa fa fa-file-powerpoint-o fa-fw"></i></a>
-              <a href="https://www.youtube.com/watch?v=9aviE6DOHJc"><i class="fa fa-film fa-fw"></i></a>
-            </li>
-          </div>
-          <div class="col-md-3">
-            <img src="img/Heartbeat.gif"  width="230"/>
-          </div>
+      <div class="col-md-12 page-header section-card research-section" id="multimodal-projects">
+        <h3><i class="fa fa-flask"></i> New Multi-modal Computational Sensing Technologies for Diverse Applications</h3>
+        <div class="research-grid">
+          <article class="research-topic-card">
+            <div class="research-topic-copy">
+              <h4>Computational Sensing of Invisible Environmental Dynamics with Off-the-Shelf Sensors</h4>
+              <p>We develop sensing systems that reveal environmental phenomena that are difficult for people and sensors to directly perceive in everyday settings.</p>
+              <ul>
+                <li>Repurposing commodity sensors to capture subtle airflow, temperature-field, and soil-state changes.</li>
+                <li>Turning low-cost platforms into deployable tools for environmental understanding in real-world scenarios.</li>
+              </ul>
+            </div>
+            <div class="research-topic-media">
+              <img src="img/moirelens.gif" alt="MoiréLens preview"/>
+            </div>
+            <div class="research-topic-links">
+              <h5>Selected Publications</h5>
+              <ul>
+                <li><a href="index.html#moirelens">MoiréLens</a> [<span class="pub-strong">SenSys'26</span>] <span class="research-paper-note">Invisible airflow sensing using Moiré patterns</span></li>
+                <li><a href="index.html#soilnutri">SoilNutri</a> [<span class="pub-strong">UbiComp'26</span>] <span class="research-paper-note">batteryless soil moisture and nitrogen sensing using UWB</span></li>
+                <li><a href="index.html#vector">VECTOR</a> [<span class="pub-strong">UbiComp'22</span>] <span class="research-paper-note">temperature-field monitoring using acoustic signals</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="research-topic-card">
+            <div class="research-topic-copy">
+              <h4>Health Sensing using Wearable Consumer Electronics</h4>
+              <p>We build practical health sensing systems on consumer wearables and mobile devices for robust monitoring in everyday environments.</p>
+              <ul>
+                <li>Repurposing earbuds, phones, and lightweight wearable platforms for continuous physiological and behavioral sensing.</li>
+                <li>Designing sensing pipelines that remain robust under motion, sparse sensing, and real-world deployment constraints.</li>
+              </ul>
+            </div>
+            <div class="research-topic-media">
+              <img src="img/earcardio.png" alt="EarCardio preview"/>
+            </div>
+            <div class="research-topic-links">
+              <h5>Selected Publications</h5>
+              <ul>
+                <li><a href="index.html#earcardio">EarCardio</a> [<span class="pub-strong">MobiCom'26</span>] <span class="research-paper-note">cardiac monitoring using commerical wireless earbuds</span></li>
+                <li><a href="index.html#loear">LoEar</a> [<span class="pub-strong">UbiComp'22</span>] <span class="research-paper-note">long-range contactless vital sign monitoring using acoustics</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="research-topic-card">
+            <div class="research-topic-copy">
+              <h4>Fine-grained Human Activity Sensing and Reasoning in Ambient Environments</h4>
+              <p>We study how ambient and wearable sensing systems can capture fine-grained human activities and support higher-level reasoning about daily behaviors in real-world environments.</p>
+              <ul>
+                <li>Combining multi-modal sensing for detailed activity understanding across body movement, context, and daily-life interactions.</li>
+                <li>Building sensing pipelines that support both precise recognition and richer behavioral reasoning.</li>
+              </ul>
+            </div>
+            <div class="research-topic-media">
+              <img src="img/ultraposer.gif" alt="UltraPoser preview"/>
+            </div>
+            <div class="research-topic-links">
+              <h5>Selected Publications</h5>
+              <ul>
+                <li><a href="index.html#ultraposer">UltraPoser</a> [<span class="pub-strong">UIST'25</span>] <span class="research-paper-note">full-body pose estimation using distributed wearables</span></li>
+                <li><a href="index.html#egoadl">EgoADL</a> [<span class="pub-strong">UbiComp'24</span>] <span class="research-paper-note">multimodal daily-life logging using smartphone</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="research-topic-card">
+            <div class="research-topic-copy">
+              <h4>Tactile Sensing and Actuation for Robotics (In submission)</h4>
+            </div>
+            <div class="research-topic-media">
+              <div class="paper-placeholder">In submission</div>
+            </div>
+            <div class="research-topic-links">
+              <h5>Selected Publications</h5>
+              <ul>
+                <li>In submission works</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
 
-      <div class="col-md-12 page-header section-card publication-list" id="WiFi">
-        <h3> <i class="fa fa-wifi"></i> HCI systems based WiFi signals</h3>
-        <div class="col-md-12">
-          <div class="col-md-9">
-            <h4> WiTrace: Centimeter-Level Passive Gesture Tracking Using WiFi Signals</h4>
-            <li> Enabling device-free cm-level gesture tracking system using WiFi signals. </li>
-            <li> Extracting the phase of the signals reflected by the hand from the composite signals, and measures the phase changes to obtain the movement distance </li>
-            <li> Using one transmitter and two receivers to enable the 2D tracking of hand. </li>
-            <li> <font color="#e74c3c"> <b> Publicated in SECON 2018. </b></font>
-                <a href="files/secon18_witrace.pdf" target="_blank"><i class="fa fa fa-file-pdf-o fa-fw"></i></a>
-                <a href="files/secon18_witrace_slides.pdf" target="_blank"><i class="fa fa fa-file-powerpoint-o fa-fw"></i></a>
-            </li>
-          </div>
-          <div class="col-md-3">
-            <img src="img/witrace.png"  alt="witrace.png"  width="150"/>
-          </div>
-        </div>
-      </div>
+      <div class="col-md-12 page-header section-card research-section" id="ai-native-projects">
+        <h3><i class="fa fa-microchip"></i> AI-Native Sensing Systems Challenges for Mobile, Wearable, Robotic, and IoT Platforms</h3>
+        <div class="research-grid">
+          <article class="research-topic-card">
+            <div class="research-topic-copy">
+              <h4>AI-Assisted Mobile System Optimization</h4>
+              <p>We study how AI can help mobile and sensing systems make better decisions about communication, adaptation, and resource management under real-world constraints.</p>
+              <ul>
+                <li>Using foundation and generative models to improve system efficiency, communication, and deployment practicality.</li>
+                <li>Designing adaptive mobile systems under limited bandwidth, compute, and storage budgets.</li>
+              </ul>
+            </div>
+            <div class="research-topic-media">
+              <img src="img/kdc.png" alt="KDC preview"/>
+            </div>
+            <div class="research-topic-links">
+              <h5>Selected Publications</h5>
+              <ul>
+                <li><a href="index.html#kdc">KDC</a> [<span class="pub-strong">NSDI'26</span>] <span class="research-paper-note">knowledge-driven network of multimodal data using foundation models</span></li>
+                <li><a href="index.html#rfcanvas">RFCanvas</a> [<span class="pub-strong">SenSys'24</span>] <span class="research-paper-note">modeling RF channels using visual priors</span></li>
+              </ul>
+            </div>
+          </article>
 
-      <div class="col-md-12 page-header section-card publication-list" id="Charging">
-        <h3> <i class="fa fa-battery-full"></i> Wireless charging scheduling</h3>
-        <div class="col-md-12">
-          <div class="col-md-9">
-            <h4> Charging Task Scheduling for Directional Wireless Charger Networks</h4>
-            <li> Considering the problem of charging task scheduling for directional wireless charger networks aiming for maximizing the overall charging utility of offline/online charging tasks. </li>
-            <li> Scheduling the orientations of all the chargers with time in a centralized offline (distributed online) fashion to maximize the overall charging utility for all the tasks. </li>
-            <li> Bounding the performance loss of scheduling delay, and proving that our distributed online algorithm competitive ratio. </li>
-            <li> <font color="#e74c3c"> <b> Publicated in ICPP 2018. </b></font>
-              <a href="files/ICPP18_CHATS.pdf" target="_blank"><i class="fa fa fa-file-pdf-o fa-fw"></i></a>
-            </li>
-          </div>
-          <div class="col-md-3">
-            <img src="img/haste.png"  alt="haste.png"  width="150"/>
-          </div>
+          <article class="research-topic-card">
+            <div class="research-topic-copy">
+              <h4>AI-Native Secure and Privacy-Preserving Sensing</h4>
+              <p>We develop both attacks and defenses to better understand the trust, privacy, and security boundaries of sensing systems.</p>
+              <ul>
+                <li>Studying how sensing modalities can leak private information or be manipulated by adversaries.</li>
+                <li>Designing practical defenses for mobile, acoustic, RF, and AI-driven sensing platforms.</li>
+              </ul>
+            </div>
+            <div class="research-topic-media">
+              <img src="img/magicpatch.png" alt="MagicPatch preview"/>
+            </div>
+            <div class="research-topic-links">
+              <h5>Selected Publications</h5>
+              <ul>
+                <li><a href="index.html#magicPatch">MagicPatch</a> [<span class="pub-strong">MobiCom'26</span>] <span class="research-paper-note">mmWave imaging screening attack using metasurfaces</span></li>
+                <li><a href="index.html#eveguard">EveGuard</a> [<span class="pub-strong">S&amp;P'25</span>] <span class="research-paper-note">perturbation defense against vibration eavesdropping</span></li>
+                <li><a href="index.html#magmaw">Magmaw</a> [<span class="pub-strong">NDSS'25</span>] <span class="research-paper-note">adversarial attacks on ML-based wireless communication</span></li>
+                <li><a href="index.html#stealthyimu">StealthyIMU</a> [<span class="pub-strong">NDSS'23</span>] <span class="research-paper-note">zero-permission sensor privacy attack using motion sensor</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="research-topic-card">
+            <div class="research-topic-copy">
+              <h4>Sensing-Assisted Native AI Mobile System (In submission)</h4>
+              <p>This direction explores mobile systems that use sensing to support more adaptive and context-aware native AI capabilities on personal devices.</p>
+            </div>
+            <div class="research-topic-media">
+              <div class="paper-placeholder">In submission</div>
+            </div>
+            <div class="research-topic-links">
+              <h5>Related News</h5>
+              <ul>
+                <li><a href="https://cse.engin.umich.edu/stories/samsung-start-funds-cse-researchers-wearable-memory-augmentation-system" target="_blank">Samsung START funds CSE researchers’ wearable memory augmentation system</a></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="research-topic-card">
+            <div class="research-topic-copy">
+              <h4>AI-Assisted Mobile Sensing System (Ongoing)</h4>
+            </div>
+            <div class="research-topic-media">
+              <div class="paper-placeholder">Ongoing</div>
+            </div>
+            <div class="research-topic-links">
+              <h5>Selected Publications</h5>
+              <ul>
+                <li>Ongoing project</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="research-topic-card">
+            <div class="research-topic-copy">
+              <h4>Wearable Agentic AI Memory System (Ongoing)</h4>
+              <p>This project studies wearable AI systems that can capture, organize, and retrieve important personal experiences to support human memory in everyday life.</p>
+            </div>
+            <div class="research-topic-media">
+              <div class="paper-placeholder">Ongoing</div>
+            </div>
+            <div class="research-topic-links">
+              <h5>Related News</h5>
+              <ul>
+                <li><a href="https://cse.engin.umich.edu/stories/samsung-start-funds-cse-researchers-wearable-memory-augmentation-system" target="_blank">Samsung START funds CSE researchers’ wearable memory augmentation system</a></li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
 
       <div class="col-md-12 site-credit">
         Website designed by Ke Sun with OpenAI Codex.
       </div>
-  </div>
+    </div>
 
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/site.js?v=20260328"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 
