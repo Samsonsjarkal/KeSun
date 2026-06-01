@@ -491,6 +491,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 180px;
 }
 
 .paper-card-media img {
@@ -743,6 +744,7 @@ h4 {
   align-items: center;
   justify-content: center;
   min-height: 100%;
+  aspect-ratio: 4 / 3;
 }
 
 .research-topic-media img {

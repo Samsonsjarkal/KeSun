@@ -8,14 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preload" as="image" href="img/photo_KeSun_UMich_480.jpg">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/theme.css?v=20260401" rel="stylesheet">
+  <link href="css/theme.css?v=20260601" rel="stylesheet">
   <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-  <script src="assets/js/ie-emulation-modes-warning.js"></script>
+  <script defer src="assets/js/ie-emulation-modes-warning.js"></script>
 
   <title> Ke Sun's homepage</title>
 </head>
@@ -65,7 +68,7 @@
         <p><i class="fa fa-flask"></i> <a href="https://ambient-intelligence-lab-umich-eecs.github.io/ami_lab_website/">Ambient Intelligence (AmI) Lab</a></p>
       </div>
       <div class="col-md-4 hero-photo">
-        <img src="img/photo_KeSun_UMich.jpg"  alt="Personal photo"  height="200"/>
+        <img src="img/photo_KeSun_UMich_480.jpg" alt="Personal photo" width="408" height="480" fetchpriority="high" decoding="async"/>
       </div>
       </div>
       <div class="col-md-12 page-header section-card biography-section" id="biography">
@@ -225,7 +228,7 @@
                   MoiréLens demonstrates that everyday cameras can be used for visualizing air-flow and refractive-index dynamics. It converts subtle refractive-index variations into measurable Moiré phase shifts formed between the background and the camera’s color-filter array.
         </div>
         <div class="col-md-4">
-          <img src="img/moirelens.gif"  alt="moirelens"  width="250"/>
+          <img src="img/moirelens.gif" loading="lazy" decoding="async"  alt="moirelens"  width="250"/>
         </div>
         <div class="col-md-8">
           <p style="font-size:16px" class="paper-wireless paper-mobile" id="earcardio">
@@ -237,7 +240,7 @@
                   EarCardio repurposes the IMU sensors in TWS earbuds for cardiac monitoring by capturing in-ear ballistocardiogram (BCG) signals. Our experiments on 110 subjects verify that EarCardio can accurately reconstruct cardiac signals while showing resilience to motion artifacts, missing data, and low sampling rates.
         </div>
         <div class="col-md-4">
-          <img src="img/earcardio.png"  alt="earcardio"  width="250"/>
+          <img src="img/earcardio.png" loading="lazy" decoding="async"  alt="earcardio"  width="250"/>
         </div>
         <div class="col-md-12">
           <br><br>
@@ -252,7 +255,7 @@
                   MagicPatch proposes an efficient attack on millimeterwave (mmWave) security screening systems by designing a novel reflective metasurface patch that can be easily attached to clothing.
         </div>
         <div class="col-md-4">
-          <img src="img/magicpatch.png"  alt="magicPatch"  width="250"/>
+          <img src="img/magicpatch.png" loading="lazy" decoding="async"  alt="magicPatch"  width="250"/>
         </div>
         <div class="col-md-12">
           <br><br>
@@ -267,7 +270,7 @@
                   SoilNutri is a passive metasurface-based and low-cost system for soil moisture and nitrogen monitoring.
         </div>
         <div class="col-md-4">
-          <img src="img/SoilNutri.png" alt="SoilNutri" width="250"/>
+          <img src="img/SoilNutri.png" loading="lazy" decoding="async" alt="SoilNutri" width="250"/>
         </div>
         <div class="col-md-12">
           <br><br>
@@ -282,7 +285,7 @@
                   We introduce Knowledge-Driven Communication (KDC), a framework that transmits semantic knowledge rather than raw bits by leveraging pretrained knowledge bases.
         </div>
           <div class="col-md-4">
-            <img src="img/kdc.png"  alt="kdc"  width="250"/>
+            <img src="img/kdc.png" loading="lazy" decoding="async"  alt="kdc"  width="250"/>
           </div>
           <div class="col-md-12">
             <br><br>
@@ -297,7 +300,7 @@
                   UWB-Prac is a real-time seat-level smartphone localization system that operates using only the existing single UWB anchor infrastructure commonly found in modern vehicles. It localizes smartphone in real-time during driving and resolves spatial ambiguity in CIR features by: (1) optimizing UWB anchor placement during vehicle design, and (2) applying a directional RF shield in retrofit scenarios.
           </div>
           <div class="col-md-4">
-            <img src="img/uwbptrac.jpg"  alt="uwbprac"  width="250"/>
+            <img src="img/uwbptrac.jpg" loading="lazy" decoding="async"  alt="uwbprac"  width="250"/>
           </div>
           <div class="col-md-12">
             <br><br>
@@ -313,7 +316,7 @@
                   UltraPoser leverages built-in microphones and speakers on commodity wearables, such as smartphones and smartwatches, to transmit and receive inaudible ultrasound signals, to support IMU-based full-body pose estimation with high accuracy.
           </div>
           <div class="col-md-4">
-            <img src="img/ultraposer.gif"  alt="ultraposer"  width="250"/>
+            <img src="img/ultraposer.gif" loading="lazy" decoding="async"  alt="ultraposer"  width="250"/>
           </div>
           <div class="col-md-12">
             <br><br>
@@ -328,7 +331,7 @@
                   Vibrometry-based side channels pose a significant privacy risk, exploiting sensors like mmWave radars, light sensors, and accelerometers to detect vibrations from sound sources or proximate objects, enabling speech eavesdropping. This paper presents EveGuard, a software-driven defense framework that creates adversarial audio, protecting voice privacy from these side channels without compromising human perception.
           </div>
           <div class="col-md-4">
-            <img src="img/eveguard.png"  alt="eveguard"  width="250"/>
+            <img src="img/eveguard.png" loading="lazy" decoding="async"  alt="eveguard"  width="250"/>
           </div>
           <div class="col-md-12">
             <br><br>
@@ -343,7 +346,7 @@
                   This paper exploits these distinct security vulnerabilities of LLM-based Code Completion Tools to develop targeted attack methodologies on two critical security risks: jailbreaking and training data extraction attacks.
           </div>
           <div class="col-md-4">
-            <img src="img/lcct.png"  alt="lcct"  width="250"/>
+            <img src="img/lcct.png" loading="lazy" decoding="async"  alt="lcct"  width="250"/>
           </div>
           <div class="col-md-12">
             <br><br>
@@ -358,7 +361,7 @@
                   We propose Magmaw, a novel attack methodology targeting deep neural network (DNN)-based joint source-channel coding (JSCC) wireless communication systems. Magmaw is capable of generating universal adversarial perturbations for any multimodal signal transmitted over a wireless channel.
           </div>
           <div class="col-md-4">
-            <img src="img/magmaw.png"  alt="magmaw"  width="250"/>
+            <img src="img/magmaw.png" loading="lazy" decoding="async"  alt="magmaw"  width="250"/>
           </div>
           <div class="col-md-12">
             <br><br>
@@ -373,7 +376,7 @@
                     We propose RFCanvas, which fuses visual priors and RF measurements to achieve high accuracy for realistic scenes and be responsive to environmental changes.
             </div>
             <div class="col-md-4">
-              <img src="img/rf_canvas.png"  alt="rfcanvas"  width="250"/>
+              <img src="img/rf_canvas.png" loading="lazy" decoding="async"  alt="rfcanvas"  width="250"/>
             </div>
             <div class="col-md-12">
               <br><br>
@@ -388,7 +391,7 @@
                   We propose EgoADL, the first egocentric ADL sensing system that uses an in-pocket smartphone as a multi-modal sensor hub to capture body motion, interaction with the physical environment and daily objects using non-visual sensors (audio, wireless sensing, and motion sensors).
           </div>
           <div class="col-md-4">
-            <img src="img/egoadl.png"  alt="egoadl"  width="250"/>
+            <img src="img/egoadl.png" loading="lazy" decoding="async"  alt="egoadl"  width="250"/>
           </div>
           <div class="col-md-12">
             <br><br>
@@ -404,7 +407,7 @@
                   We propose StealthyIMU, a new threat that uses side channel to steal permission-protected private information from the voice-user interface.
           </div>
           <div class="col-md-4">
-            <img src="img/stealthyimu.jpg"  alt="stealthyimu"  width="250"/>
+            <img src="img/stealthyimu.jpg" loading="lazy" decoding="async"  alt="stealthyimu"  width="250"/>
           </div>
           <div class="col-md-12">
             <br><br>
@@ -418,7 +421,7 @@
                     We propose SCALAR, a self-calibrated acoustic ranging system that achieves sub-millimeter ranging accuracy on distributed commercial devices.
             </div>
             <div class="col-md-4">
-              <img src="img/scalar.jpg"  alt="scalar"  width="250"/>
+              <img src="img/scalar.jpg" loading="lazy" decoding="async"  alt="scalar"  width="250"/>
             </div>
             <div class="col-md-12">
               <br><br>
@@ -432,7 +435,7 @@
                   We introduce VECTOR, a temperature-field monitoring system that achieves high temperature sensing accuracy and fast response time using commercial sound playing/recording devices.
           </div>
           <div class="col-md-4">
-            <img src="img/room_scenarios_cropped.jpg"  alt="vector"  width="250"/>
+            <img src="img/room_scenarios_cropped.jpg" loading="lazy" decoding="async"  alt="vector"  width="250"/>
           </div>
           <div class="col-md-12">
             <br><br>
@@ -447,7 +450,7 @@
                    We propose LoEar, which is a novel acoustic sensing system using only a single microphone and speaker to detect vital signs (respiration and heartbeat) with a significantly increased sensing range (> 6 meter).
           </div>
           <div class="col-md-4">
-            <img src="img/loear.jpeg"  alt="loear"  width="250"/>
+            <img src="img/loear.jpeg" loading="lazy" decoding="async"  alt="loear"  width="250"/>
           </div>
           <div class="col-md-12">
             <br><br>
@@ -463,7 +466,7 @@
                    We propose UltraSE, which uses ultrasound sensing as a complementary modality to separate the desired speaker’s voice from interferences and noise.
           </div>
           <div class="col-md-4">
-            <img src="img/ultrase.jpg"  alt="ultrase"  width="250"/>
+            <img src="img/ultrase.jpg" loading="lazy" decoding="async"  alt="ultrase"  width="250"/>
           </div>
           <div class="col-md-12">
             <br><br>
@@ -478,7 +481,7 @@
                  model, which can explicitly exploit the sensor diversities across time-frequency-spatial domains.
         </div>
         <div class="col-md-4">
-          <img src="img/exgsense.gif"  alt="exgsense"  width="250"/>
+          <img src="img/exgsense.gif" loading="lazy" decoding="async"  alt="exgsense"  width="250"/>
         </div>
         <div class="col-md-12">
           <br><br>
@@ -494,7 +497,7 @@
                  MicShield is a companion device with voice assistant to enable the selective jamming mechanism which, for the first time, prevents VAs from recording private speech without affecting the voice assistants’ normal functionalities.
         </div>
         <div class="col-md-4">
-          <img src="img/micshield.jpg"  alt="micshield"  width="250"/>
+          <img src="img/micshield.jpg" loading="lazy" decoding="async"  alt="micshield"  width="250"/>
         </div>
         <div class="col-md-12">
           <br><br>
@@ -509,7 +512,7 @@
                  milliEgo is a novel deep-learning approach that demonstrates the feasibility of mmWave odometry and provides a fusion framework to develop a robust mmWaveInertial Odometry.
         </div>
         <div class="col-md-4">
-          <img src="img/milliego.jpg"  alt="milliego"  width="250"/>
+          <img src="img/milliego.jpg" loading="lazy" decoding="async"  alt="milliego"  width="250"/>
         </div>
         <div class="col-md-12">
           <br><br>
@@ -523,7 +526,7 @@
                  DSW provides a robust similarity measure between gesture samples and can work for both one-shot learning in supervised gesture recognition and unsupervised learning tasks.
         </div>
         <div class="col-md-4">
-          <img src="img/dsw.jpg"  alt="dsw"  width="250"/>
+          <img src="img/dsw.jpg" loading="lazy" decoding="async"  alt="dsw"  width="250"/>
         </div>
         <div class="col-md-12">
           <br><br>
@@ -537,7 +540,7 @@
                 that SpiderMon can detect keystroke movements at a distance of 15 meters or even behind the wall.
         </div>
         <div class="col-md-4">
-          <img src="img/SpinderMon.gif"  alt="SpiderMon"  width="250"/>
+          <img src="img/SpinderMon.gif" loading="lazy" decoding="async"  alt="SpiderMon"  width="250"/>
         </div>
         <div class="col-md-12">
           <br><br>
@@ -554,7 +557,7 @@
                 i.e., sounds propagating through the air, to sense touch gestures.
         </div>
         <div class="col-md-4">
-          <img src="img/vskin.gif"  alt="vskin"  width="250"/>
+          <img src="img/vskin.gif" loading="lazy" decoding="async"  alt="vskin"  width="250"/>
         </div>
         <div class="col-md-12">
           <br><br>
@@ -569,7 +572,7 @@
                  The user only needs to press the phone on his/her chest, and the system can identify the user within a few heartbeats. 
         </div>
         <div class="col-md-4">
-          <img src="img/Heartbeat.gif"  alt="heartbeat"  width="250"/>
+          <img src="img/Heartbeat.gif" loading="lazy" decoding="async"  alt="heartbeat"  width="250"/>
         </div>
         <div class="col-md-12">
           <br><br>
@@ -597,7 +600,7 @@
                  along with one COTS mono-camera, to enable 3D tracking of fingers.
         </div>
         <div class="col-md-4">
-          <img src="img/ARtype.jpg"  alt="Dolphin"  width="250"/>
+          <img src="img/ARtype.jpg" loading="lazy" decoding="async"  alt="Dolphin"  width="250"/>
         </div>
         <!-- <div class="col-md-10">
         <p class="paper-wireless paper-mobile">
@@ -627,7 +630,7 @@
                 <b><span class="pub-strong"> MIT Technology Review</span></b>: <a href="https://www.technologyreview.com/s/602834/this-app-lets-you-control-your-phone-using-sonar/"> This App Lets You Control Your Phone Using Sonar</a>
         </div>
         <div class="col-md-4">
-          <img src="img/llapfly.gif"  alt="LLAP"  width="250"/>
+          <img src="img/llapfly.gif" loading="lazy" decoding="async"  alt="LLAP"  width="250"/>
         </div>
       </div>
 
@@ -700,7 +703,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/site.js?v=20260401"></script>
+    <script src="js/site.js?v=20260601"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>

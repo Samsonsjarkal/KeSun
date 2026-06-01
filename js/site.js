@@ -611,7 +611,7 @@
     centerElement(target, true);
   });
 
-  window.addEventListener("load", function () {
+  document.addEventListener("DOMContentLoaded", function () {
     buildPublicationGroups();
     addPublicationFilters(document.getElementById("publication"));
     Array.prototype.forEach.call(document.querySelectorAll(".publication-list"), function (section) {
