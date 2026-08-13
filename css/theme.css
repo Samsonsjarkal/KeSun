@@ -237,7 +237,7 @@ h4 {
 }
 
 .hero-photo img {
-  width: min(100%, 240px);
+  width: min(100%, 210px);
   height: auto;
   border: 6px solid rgba(255, 203, 5, 0.35);
   border-radius: 22px;
@@ -249,6 +249,10 @@ h4 {
 .page-intro {
   padding: 30px 30px 22px;
   margin-top: 24px;
+}
+
+.biography-section {
+  height: 980px;
 }
 
 .page-intro h1 {
@@ -487,6 +491,128 @@ h4 {
   color: #7b5211;
 }
 
+.publication-carousel-section {
+  position: relative;
+  padding: 6px 0 2px;
+}
+
+.publication-carousel-frame {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 18px;
+  align-items: center;
+}
+
+.publication-carousel-viewport {
+  position: relative;
+  overflow: hidden;
+}
+
+.publication-carousel-slide {
+  display: none;
+  gap: 20px;
+  align-items: stretch;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 18px 36px rgba(0, 39, 76, 0.1);
+}
+
+.publication-carousel-slide.is-active {
+  display: flex;
+  flex-direction: column;
+}
+
+.publication-carousel-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding-bottom: 4px;
+}
+
+.publication-carousel-media img,
+.publication-carousel-media video {
+  width: 100%;
+  max-width: 100%;
+  max-height: 320px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 18px 36px rgba(0, 39, 76, 0.14);
+}
+
+.publication-carousel-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.publication-carousel-copy h4 {
+  margin-bottom: 0;
+  font-size: 2.2rem;
+}
+
+.publication-carousel-copy h4 a {
+  color: inherit;
+}
+
+.publication-carousel-venue,
+.publication-carousel-links {
+  margin-bottom: 0;
+}
+
+.publication-carousel-venue .pub-strong {
+  color: #b22222;
+}
+
+.publication-carousel-links a {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 14px;
+  font-weight: 700;
+}
+
+.publication-carousel-nav {
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(0, 39, 76, 0.92);
+  color: #fffefb;
+  font-size: 2.4rem;
+  line-height: 1;
+  box-shadow: 0 16px 28px rgba(0, 39, 76, 0.18);
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.publication-carousel-nav:hover,
+.publication-carousel-nav:focus {
+  background: #0b5e8e;
+  transform: translateY(-1px);
+}
+
+.publication-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.publication-carousel-dot {
+  width: 12px;
+  height: 12px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(69, 98, 125, 0.28);
+  transition: transform 180ms ease, background 180ms ease;
+}
+
+.publication-carousel-dot.is-active {
+  background: var(--accent);
+  transform: scale(1.15);
+}
+
 .paper-card-media {
   display: flex;
   align-items: center;
@@ -556,6 +682,10 @@ h4 {
 #publication > .col-md-8,
 #publication > .col-md-4 {
   margin-bottom: 10px;
+}
+
+#publication.publications-section .col-md-12 {
+  margin-bottom: 0;
 }
 
 #publication > .col-md-12 {
@@ -865,6 +995,23 @@ h4 {
   .news-section {
     margin-top: 24px;
   }
+
+  .biography-section {
+    height: auto;
+  }
+
+  .publication-carousel-frame {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-carousel-slide,
+  .publication-carousel-slide.is-active {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-carousel-nav {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -893,5 +1040,14 @@ h4 {
   .section-card,
   .page-intro {
     border-radius: 22px;
+  }
+
+  .publication-carousel-slide {
+    gap: 18px;
+    padding: 16px;
+  }
+
+  .publication-carousel-copy h4 {
+    font-size: 1.8rem;
   }
 }

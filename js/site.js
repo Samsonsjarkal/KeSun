@@ -1,5 +1,17 @@
 (function () {
   var PUBLICATION_TAGS = {
+    "statescribe towards accessible change awareness across real world revisits": {
+      modalities: [],
+      challenges: [],
+      applications: ["HCI"],
+      venue: "Human Computer Interaction"
+    },
+    "moireskin ultra sensitive sensor actuator visuo tactile skin using moire patterns": {
+      modalities: ["Light"],
+      challenges: ["Extended Sensing Capabilities"],
+      applications: ["Robotic Sensing"],
+      venue: "Mobile Computing"
+    },
     "moirelens bringing schlieren imaging into real world environments using moire patterns": {
       modalities: ["Light"],
       challenges: ["Extended Sensing Capabilities"],
@@ -270,7 +282,7 @@
   }
 
   function addPublicationFilters(section) {
-    if (!section || section.querySelector(".publication-filter-bar")) {
+    if (!section || section.querySelector(".publication-filter-bar") || section.querySelector("[data-publication-carousel]")) {
       return;
     }
 
@@ -582,6 +594,97 @@
     }
   }
 
+  function initPublicationCarousel(section) {
+    if (!section) {
+      return null;
+    }
+
+    var slides = Array.prototype.slice.call(section.querySelectorAll(".publication-carousel-slide"));
+    if (!slides.length) {
+      return null;
+    }
+
+    var prev = section.querySelector(".publication-carousel-nav.is-prev");
+    var next = section.querySelector(".publication-carousel-nav.is-next");
+    var dots = section.querySelector(".publication-carousel-dots");
+    var state = { index: 0, slides: slides };
+    var autoAdvanceTimer = null;
+
+    function scheduleAutoAdvance() {
+      if (autoAdvanceTimer) {
+        window.clearTimeout(autoAdvanceTimer);
+      }
+
+      autoAdvanceTimer = window.setTimeout(function () {
+        render(state.index + 1);
+        scheduleAutoAdvance();
+      }, 10000);
+    }
+
+    function render(index) {
+      state.index = (index + slides.length) % slides.length;
+      slides.forEach(function (slide, slideIndex) {
+        slide.classList.toggle("is-active", slideIndex === state.index);
+      });
+
+      if (dots) {
+        Array.prototype.forEach.call(dots.querySelectorAll(".publication-carousel-dot"), function (dot, dotIndex) {
+          dot.classList.toggle("is-active", dotIndex === state.index);
+        });
+      }
+    }
+
+    if (dots) {
+      slides.forEach(function (slide, slideIndex) {
+        var dot = document.createElement("button");
+        dot.type = "button";
+        dot.className = slideIndex === 0 ? "publication-carousel-dot is-active" : "publication-carousel-dot";
+        dot.setAttribute("aria-label", "Show " + slide.id);
+        dot.addEventListener("click", function () {
+          render(slideIndex);
+          scheduleAutoAdvance();
+        });
+        dots.appendChild(dot);
+      });
+    }
+
+    if (prev) {
+      prev.addEventListener("click", function () {
+        render(state.index - 1);
+        scheduleAutoAdvance();
+      });
+    }
+
+    if (next) {
+      next.addEventListener("click", function () {
+        render(state.index + 1);
+        scheduleAutoAdvance();
+      });
+    }
+
+    render(0);
+    scheduleAutoAdvance();
+    return {
+      activateForTarget: function (target) {
+        var slide = target && target.closest(".publication-carousel-slide");
+        if (!slide) {
+          return false;
+        }
+
+        var slideIndex = slides.indexOf(slide);
+        if (slideIndex === -1) {
+          return false;
+        }
+
+        render(slideIndex);
+        scheduleAutoAdvance();
+        return true;
+      }
+    };
+  }
+
+  var publicationCarousel = null;
+
   document.addEventListener("click", function (event) {
     var link = event.target.closest("a[href]");
     if (!link) {
@@ -607,6 +710,10 @@
       return;
     }
 
+    if (publicationCarousel) {
+      publicationCarousel.activateForTarget(target);
+    }
+
     event.preventDefault();
     centerElement(target, true);
   });
@@ -618,6 +725,8 @@
       addPublicationFilters(section);
     });
 
+    publicationCarousel = initPublicationCarousel(document.querySelector("[data-publication-carousel]"));
+
     if (!window.location.hash) {
       return;
     }
@@ -625,6 +734,10 @@
     var target = getHashTarget(window.location.hash);
     if (!target) {
       return;
+    }
+
+    if (publicationCarousel) {
+      publicationCarousel.activateForTarget(target);
     }
 
     setTimeout(function () {
